@@ -126,17 +126,17 @@ a:hover
     margin-right: 5px;
 }
 
-.ad
+.advert
 {
     grid-area: ad;
 }
 
-.ad img
+.advert img
 {
     width: 120px;
 }
 
-.ad_title
+.advert_title
 {
     display: block;
     color: #0054b9;
@@ -144,7 +144,7 @@ a:hover
     margin-top: 5px;
 }
 
-.ad_content
+.advert_content
 {
     font-size: .6em;
     margin-top: 10px;
@@ -217,7 +217,7 @@ a:hover
     color: #999;
 }
 
-.wide_ad
+.wide_advert
 {
     grid-area: wa;
     margin-bottom: 50px;
