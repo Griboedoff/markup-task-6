@@ -6,7 +6,6 @@ body
 button
 {
     cursor: pointer;
-
 }
 
 .face
@@ -16,7 +15,11 @@ button
     grid-column-gap: 5px;
     font: 20px Arial;
     display: grid;
-    grid-template-areas: 'city ph ph ph ph config mail_control' 'ph1 news news news ad ad ph3' 'logo s s s s s ph3' 'ph4 wa wa wa wa wa ph3' 'ph4 w w w w w ph3';
+    grid-template-areas: 'city ph ph ph ph config mail_control'
+        'ph1 news news news ad ad ph3'
+        'logo s s s s s ph3'
+        'ph4 wa wa wa wa wa ph3'
+        'ph4 w w w w w ph3';
 }
 
 .city
