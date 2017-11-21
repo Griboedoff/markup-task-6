@@ -16,11 +16,7 @@ button
     grid-column-gap: 5px;
     font: 20px Arial;
     display: grid;
-    grid-template-areas: 'city ph ph ph ph config mail_control'
-        'ph1 news news news ad ad ph3'
-        'logo s s s s s ph3'
-        'ph4 wa wa wa wa wa ph3'
-        'ph4 w w w w w ph3';
+    grid-template-areas: 'city ph ph ph ph config mail_control' 'ph1 news news news ad ad ph3' 'logo s s s s s ph3' 'ph4 wa wa wa wa wa ph3' 'ph4 w w w w w ph3';
 }
 
 .city
@@ -240,6 +236,7 @@ a:hover
     align-content: flex-start;
     font-size: .9em;
     max-width: 270px;
+    display: none;
 }
 
 .temperature
@@ -354,4 +351,77 @@ a:hover
 .time
 {
     color: #999;
+}
+
+.widget_selector
+{
+    display: none;
+}
+
+.widget_selectors_popup
+{
+    display: none;
+}
+
+.widget_popup
+{
+    cursor: pointer;
+}
+
+.widgets_selectors_control
+{
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    width: 200px;
+    border: 1px solid black;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0 0 3px 3px #999;
+    margin-left: -70px;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.widgets_selectors_control label
+{
+    display: block;
+}
+
+.widget_selector_label::before
+{
+    content: '   ';
+    border: 1px solid black;
+    padding-left: 17px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+input[id='widget_services']:checked ~ div label[for='widget_services']::before,
+input[id='widget_tv']:checked ~ div label[for='widget_tv']::before,
+input[id='widget_jokes']:checked ~ div label[for='widget_jokes']::before,
+input[id='widget_news']:checked ~ div label[for='widget_news']::before,
+input[id='widget_weather']:checked ~ div label[for='widget_weather']::before,
+input[id='widget_traffic']:checked ~ div label[for='widget_traffic']::before,
+input[id='widget_maps']:checked ~ div label[for='widget_maps']::before
+{
+    border: 1px solid black;
+    padding: 0 2px;
+    content: '✔';
+}
+
+input[id='widget_services']:checked ~ .widgets .services,
+input[id='widget_tv']:checked ~ .widgets .tv,
+input[id='widget_jokes']:checked ~ .widgets .jokes,
+input[id='widget_news']:checked ~ .widgets .auto_news,
+input[id='widget_weather']:checked ~ .widgets .weather,
+input[id='widget_traffic']:checked ~ .widgets .traffic,
+input[id='widget_maps']:checked ~ .widgets .maps
+{
+    display: block;
+}
+
+input[id='widget_popup']:checked ~ .widgets_selectors_control
+{
+    display: block;
 }

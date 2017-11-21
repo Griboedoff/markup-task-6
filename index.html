@@ -7,8 +7,27 @@
 </head>
 <body>
 <main class="face">
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_services" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_tv" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_jokes" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_news" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_weather" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_traffic" checked>
+    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_maps" checked>
     <a class="city">Екатеринбург</a>
-    <div class="config">Настройка</div>
+    <div class="config">
+        <input type="checkbox" class="widget_selectors_popup" id="widget_popup">
+        <label for="widget_popup" class="widget_popup">Настройка</label>
+        <div class="widgets_selectors_control">
+            <label for="widget_services" class="widget_selector_label">Посещаемое</label>
+            <label for="widget_tv" class="widget_selector_label">Телепрограмма</label>
+            <label for="widget_jokes" class="widget_selector_label">Лучшие анекдоты</label>
+            <label for="widget_news" class="widget_selector_label">Авто новости</label>
+            <label for="widget_weather" class="widget_selector_label">Погода</label>
+            <label for="widget_traffic" class="widget_selector_label">Пробки</label>
+            <label for="widget_maps" class="widget_selector_label">Карта Екатеринбурга</label>
+        </div>
+    </div>
     <div class="mail_control_container">
         <div class="mail_control">
             <div class="login"><strong>login</strong></div>
@@ -197,7 +216,6 @@
             <a href="traffic">Пробки</a> — <span class="traffic_value">1 балл</span>
             <div class="traffic_description">Сейчас дороги свободны</div>
         </div>
-
         <div class="widget maps">
             <a href="map" class="maps_title">Карта Екатеринбурга</a>
             <a href="taxi" class="maps_map_choice"><strong>Такси</strong></a>
