@@ -419,6 +419,7 @@ input[id='widget_popup']:checked ~ .widgets_selectors_control
     display: block;
 }
 
-.widget_img{
+.widget_img
+{
     vertical-align: middle;
 }
