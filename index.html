@@ -7,10 +7,10 @@
 </head>
 <body>
 <main class="face">
-    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_services" checked>
-    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_tv" checked>
-    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_jokes" checked>
-    <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_news" checked>
+    <input type="checkbox" class="c1 widget_selector" name="widget_selector" id="widget_services" checked>
+    <input type="checkbox" class="c1 widget_selector" name="widget_selector" id="widget_tv" checked>
+    <input type="checkbox" class="c2 widget_selector" name="widget_selector" id="widget_jokes" checked>
+    <input type="checkbox" class="c2 widget_selector" name="widget_selector" id="widget_news" checked>
     <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_weather" checked>
     <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_traffic" checked>
     <input type="checkbox" class="widget_selector" name="widget_selector" id="widget_maps" checked>
@@ -108,127 +108,130 @@
     </div>
 
     <div class="wide_advert"></div>
+    <div class="widgets">
+        <div class="widgets_column widgets_column_1">
+            <div class="widget services">
+                <a href="services" class="services_header">Посещаемое</a>
+                <div class="service_description">
+                    <strong class="service_name">Маркет</strong> — товары из Китая
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Авто.ру</strong> — мощный Хёндай Туссан
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Недвижимость</strong> — студии с подарками
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Работа</strong> — главный инженер
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Такси</strong> — новые выгодные тарифы
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Здоровье</strong> — поговорите с врачом
+                </div>
+                <div class="service_description">
+                    <strong class="service_name">Коллекции</strong> — всё о свадьбе
+                </div>
+            </div>
+            <div class="widget tv">
+                <a href="tv">Телепрограмма</a>
+                <button class="tv_online">ТВ онлайн</button>
+                <ul class="tv_list">
+                    <li class="tv_list_item">
+                        <span class="time">23:00</span>
+                        <span class="title">Адская кухня</span> <span class="channel">Пятница</span>
+                    </li>
+                    <li class="tv_list_item">
+                        <span class="time">23:00</span>
+                        <span class="title">Дом-2. Город любви</span> <span class="channel">ТНТ</span>
+                    </li>
+                    <li class="tv_list_item">
+                        <span class="time">23:15</span>
+                        <span class="title">Родственник</span> <span class="channel">ТВ Центр</span>
+                    </li>
+                    <li class="tv_list_item">
+                        <span class="time">23:15</span>
+                        <span class="title">Дом восковых фигур</span> <span class="channel">ТВ-3</span>
+                    </li>
+                    <li class="tv_list_item">
+                        <span class="time">23:25</span>
+                        <span class="title">АвтоNews</span> <span class="channel">Матч!</span>
+                    </li>
+                    <li class="tv_list_item">
+                        <span class="time">23:25</span>
+                        <span class="title">Григорий Р</span> <span class="channel">Пятый канал</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="widgets_column widgets_column_2">
+            <div class="widget jokes">
+                <input type="radio" class="joke_selector" id="joke1" name="jokes" checked>
+                <input type="radio" class="joke_selector" id="joke2" name="jokes">
+                <input type="radio" class="joke_selector" id="joke3" name="jokes">
+                <input type="radio" class="joke_selector" id="joke4" name="jokes">
+                <input type="radio" class="joke_selector" id="joke5" name="jokes">
+                <a href="jokes">Лучшие анекдоты</a>
+                <ul class="jokes_list">
+                    <li class="joke joke1">Вас лечить хорошо или бесплатно?</li>
+                    <li class="joke joke2">У нашего премьера хороший склад ума. Жаль — пустой.</li>
+                    <li class="joke joke3">Никакой демократии быть не может.</li>
+                    <li class="joke joke4">Денег нет, но вы держитесь здесь</li>
+                    <li class="joke joke5">Да кто я, собственно, такой, чтобы себя осуждать?</li>
+                </ul>
 
-    <div class="widgets_column widgets_column_1">
-        <div class="widget services">
-            <a href="services" class="services_header">Посещаемое</a>
-            <div class="service_description">
-                <strong class="service_name">Маркет</strong> — товары из Китая
+                <label for="joke2" class="joke_selector_label joke1">Давай еще</label>
+                <label for="joke3" class="joke_selector_label joke2">Давай еще</label>
+                <label for="joke4" class="joke_selector_label joke3">Давай еще</label>
+                <label for="joke5" class="joke_selector_label joke4">Давай еще</label>
+                <label for="joke1" class="joke_selector_label joke5">Давай еще</label>
             </div>
-            <div class="service_description">
-                <strong class="service_name">Авто.ру</strong> — мощный Хёндай Туссан
-            </div>
-            <div class="service_description">
-                <strong class="service_name">Недвижимость</strong> — студии с подарками
-            </div>
-            <div class="service_description">
-                <strong class="service_name">Работа</strong> — главный инженер
-            </div>
-            <div class="service_description">
-                <strong class="service_name">Такси</strong> — новые выгодные тарифы
-            </div>
-            <div class="service_description">
-                <strong class="service_name">Здоровье</strong> — поговорите с врачом
-            </div>
-            <div class="service_description">
-                <strong class="service_name">Коллекции</strong> — всё о свадьбе
-            </div>
-        </div>
-        <div class="widget tv">
-            <a href="tv">Телепрограмма</a>
-            <button class="tv_online">ТВ онлайн</button>
-            <ul class="tv_list">
-                <li class="tv_list_item">
-                    <span class="time">23:00</span>
-                    <span class="title">Адская кухня</span> <span class="channel">Пятница</span>
-                </li>
-                <li class="tv_list_item">
-                    <span class="time">23:00</span>
-                    <span class="title">Дом-2. Город любви</span> <span class="channel">ТНТ</span>
-                </li>
-                <li class="tv_list_item">
-                    <span class="time">23:15</span>
-                    <span class="title">Родственник</span> <span class="channel">ТВ Центр</span>
-                </li>
-                <li class="tv_list_item">
-                    <span class="time">23:15</span>
-                    <span class="title">Дом восковых фигур</span> <span class="channel">ТВ-3</span>
-                </li>
-                <li class="tv_list_item">
-                    <span class="time">23:25</span>
-                    <span class="title">АвтоNews</span> <span class="channel">Матч!</span>
-                </li>
-                <li class="tv_list_item">
-                    <span class="time">23:25</span>
-                    <span class="title">Григорий Р</span> <span class="channel">Пятый канал</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="widgets_column widgets_column_2">
-        <div class="widget jokes">
-            <input type="radio" class="joke_selector" id="joke1" name="jokes" checked>
-            <input type="radio" class="joke_selector" id="joke2" name="jokes">
-            <input type="radio" class="joke_selector" id="joke3" name="jokes">
-            <input type="radio" class="joke_selector" id="joke4" name="jokes">
-            <input type="radio" class="joke_selector" id="joke5" name="jokes">
-            <a href="jokes">Лучшие анекдоты</a>
-            <ul class="jokes_list">
-                <li class="joke joke1">Вас лечить хорошо или бесплатно?</li>
-                <li class="joke joke2">У нашего премьера хороший склад ума. Жаль — пустой.</li>
-                <li class="joke joke3">Никакой демократии быть не может.</li>
-                <li class="joke joke4">Денег нет, но вы держитесь здесь</li>
-                <li class="joke joke5">Да кто я, собственно, такой, чтобы себя осуждать?</li>
-            </ul>
-
-            <label for="joke2" class="joke_selector_label joke1">Давай еще</label>
-            <label for="joke3" class="joke_selector_label joke2">Давай еще</label>
-            <label for="joke4" class="joke_selector_label joke3">Давай еще</label>
-            <label for="joke5" class="joke_selector_label joke4">Давай еще</label>
-            <label for="joke1" class="joke_selector_label joke5">Давай еще</label>
-        </div>
-        <div class="widget auto_news">
-            <a href="autonews">Автомобильные новости</a>
-            <div class="auto_news_articles">
-                <div class="news_article">
-                    Правительство поддержало законопроект о регистрации машиномест
-                    <span class="time">12:19</span>
-                </div>
-                <div class="news_article">
-                    Обзор нового Mitsubishi, за которым выстроилась очередь
-                    <span class="time">12:01</span>
-                </div>
-                <div class="news_article">
-                    Лады оснастят системой управления со смартфона
-                    <span class="time">11:40</span>
-                </div>
-                <div class="news_article">
-                    В Китае представили спорткар с двигателем от Focus RS
-                    <span class="time">11:30</span>
-                </div>
-                <div class="news_article">
-                    Священник отчитал прихожан, а они заставили его продать Porshe
-                    <span class="time">12:11</span>
+            <div class="widget auto_news">
+                <a href="autonews">Автомобильные новости</a>
+                <div class="auto_news_articles">
+                    <div class="shadow shadow-top"></div>
+                    <div class="shadow shadow-bottom"></div>
+                    <div class="news_article">
+                        Правительство поддержало законопроект о регистрации машиномест
+                        <span class="time">12:19</span>
+                    </div>
+                    <div class="news_article">
+                        Обзор нового Mitsubishi, за которым выстроилась очередь
+                        <span class="time">12:01</span>
+                    </div>
+                    <div class="news_article">
+                        Лады оснастят системой управления со смартфона
+                        <span class="time">11:40</span>
+                    </div>
+                    <div class="news_article">
+                        В Китае представили спорткар с двигателем от Focus RS
+                        <span class="time">11:30</span>
+                    </div>
+                    <div class="news_article">
+                        Священник отчитал прихожан, а они заставили его продать Porshe
+                        <span class="time">12:11</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="widgets_column widgets_column_3">
-        <div class="widget weather">
-            <a href="weather">Погода</a> <img src="snow.png" alt="облако и снежинка" class="widget_img">
-            <span class="temperature">−1°C</span>
-            <div class="temperature_prediction">Вечер −3, ночь −3</div>
-        </div>
-        <div class="widget traffic">
-            <a href="traffic">Пробки</a><img src="traffic.png" alt="зеленый светофор" class="widget_img">
-            <span class="traffic_value">1 балл</span>
-            <div class="traffic_description">Сейчас дороги свободны</div>
-        </div>
-        <div class="widget maps">
-            <a href="map" class="maps_title">Карта Екатеринбурга</a>
-            <a href="taxi" class="maps_map_choice"><strong>Такси</strong></a>
-            <a href="rasp" class="maps_map_choice"><strong>Расписания</strong></a>
-            <a href="raspavt" class="maps_map_choice"><strong>Междугородные&nbsp;автобусы</strong></a>
+        <div class="widgets_column widgets_column_3">
+            <div class="widget weather">
+                <a href="weather">Погода</a> <img src="snow.png" alt="облако и снежинка" class="widget_img">
+                <span class="temperature">−1°C</span>
+                <div class="temperature_prediction">Вечер −3, ночь −3</div>
+            </div>
+            <div class="widget traffic">
+                <a href="traffic">Пробки</a><img src="traffic.png" alt="зеленый светофор" class="widget_img">
+                <span class="traffic_value">1 балл</span>
+                <div class="traffic_description">Сейчас дороги свободны</div>
+            </div>
+            <div class="widget maps">
+                <a href="map" class="maps_title">Карта Екатеринбурга</a>
+                <a href="taxi" class="maps_map_choice"><strong>Такси</strong></a>
+                <a href="rasp" class="maps_map_choice"><strong>Расписания</strong></a>
+                <a href="raspavt" class="maps_map_choice"><strong>Междугородные&nbsp;автобусы</strong></a>
+            </div>
         </div>
     </div>
 </main>

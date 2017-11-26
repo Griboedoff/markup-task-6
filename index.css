@@ -230,21 +230,8 @@ a:hover
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-.widgets_column_1
-{
-    grid-area: w1;
-}
-
-.widgets_column_2
-{
-    grid-area: w2;
-}
-
-.widgets_column_3
-{
-    grid-area: w3;
+    width: 270px;
+    margin-right: 20px;
 }
 
 .widget
@@ -252,7 +239,7 @@ a:hover
     margin-bottom: 20px;
     align-content: flex-start;
     font-size: .9em;
-    max-width: 270px;
+    width: 270px;
     display: none;
 }
 
@@ -296,6 +283,15 @@ a:hover
 {
     font-size: .8em;
     margin-left: 25px;
+    width: 85px;
+    cursor: pointer;
+    color: #0054b9;
+    border-bottom: dashed;
+}
+
+.joke_selector_label:before
+{
+    content: '↻';
 }
 
 .joke,
@@ -335,6 +331,12 @@ a:hover
     margin-left: 5px;
 }
 
+.auto_news
+{
+    position: relative;
+
+}
+
 .auto_news_articles
 {
     max-height: 200px;
@@ -346,11 +348,7 @@ a:hover
     color: #999;
 }
 
-.widget_selector
-{
-    display: none;
-}
-
+.widget_selector,
 .widget_selectors_popup
 {
     display: none;
@@ -403,13 +401,13 @@ input[id='widget_maps']:checked ~ div label[for='widget_maps']::before
     content: '✔';
 }
 
-input[id='widget_services']:checked ~ .widgets_column .services,
-input[id='widget_tv']:checked ~ .widgets_column .tv,
-input[id='widget_jokes']:checked ~ .widgets_column .jokes,
-input[id='widget_news']:checked ~ .widgets_column .auto_news,
-input[id='widget_weather']:checked ~ .widgets_column .weather,
-input[id='widget_traffic']:checked ~ .widgets_column .traffic,
-input[id='widget_maps']:checked ~ .widgets_column .maps
+input[id='widget_services']:checked ~ div .services,
+input[id='widget_tv']:checked ~ div .tv,
+input[id='widget_jokes']:checked ~ div .jokes,
+input[id='widget_news']:checked ~ div .auto_news,
+input[id='widget_weather']:checked ~ div .weather,
+input[id='widget_traffic']:checked ~ div .traffic,
+input[id='widget_maps']:checked ~ div .maps
 {
     display: block;
 }
@@ -422,4 +420,38 @@ input[id='widget_popup']:checked ~ .widgets_selectors_control
 .widget_img
 {
     vertical-align: middle;
+}
+
+.shadow
+{
+    position: absolute;
+    height: 30px;
+    width: 270px;
+}
+
+.shadow-top
+{
+    background: linear-gradient(rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, .4));
+}
+
+.shadow-bottom
+{
+    background: linear-gradient(rgba(255, 255, 255, .4),
+    rgba(255, 255, 255, 1));
+    bottom: 0;
+}
+
+.widgets
+{
+    grid-area: w;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.c1:not(:checked) ~ .c1:not(:checked) ~ div .widgets_column_1,
+.c2:not(:checked) ~ .c2:not(:checked) ~ div .widgets_column_2
+{
+    display: none;
 }
